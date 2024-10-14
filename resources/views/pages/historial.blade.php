@@ -104,6 +104,10 @@
                 </thead>
                 <tbody>
                     @foreach ($csvData as $row)
+                    @if ($row[0] == 'Carpeta' )
+                    @continue
+                    @endif
+
                     @if ($row[0] == '' )
                     @continue
                     @endif
